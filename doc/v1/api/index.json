@@ -1,0 +1,171 @@
+{
+  "resources": [
+    {
+      "name": "Product",
+      "examples": [
+        {
+          "description": "GET /v1/products/:id",
+          "link": "product/get_v1products:id.json",
+          "groups": "all",
+          "route": "/v1/products/:product_id",
+          "method": "get"
+        },
+        {
+          "description": "PATCH /v1/products/:id",
+          "link": "product/patch_v1products:id.json",
+          "groups": "all",
+          "route": "/v1/products/:product_id",
+          "method": "patch"
+        },
+        {
+          "description": "DELETE /v1/products/:id",
+          "link": "product/delete_v1products:id.json",
+          "groups": "all",
+          "route": "/v1/products/:product_id",
+          "method": "delete"
+        },
+        {
+          "description": "POST /v1/products",
+          "link": "product/post_v1products.json",
+          "groups": "all",
+          "route": "/v1/products",
+          "method": "post"
+        },
+        {
+          "description": "GET /v1/products",
+          "link": "product/get_v1products.json",
+          "groups": "all",
+          "route": "/v1/products",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Organizations",
+      "examples": [
+        {
+          "description": "DELETE /v1/users/:id",
+          "link": "organizations/delete_v1users:id.json",
+          "groups": "all",
+          "route": "/v1/organizations/:organization_id",
+          "method": "delete"
+        },
+        {
+          "description": "GET /v1/organizations",
+          "link": "organizations/get_v1organizations.json",
+          "groups": "all",
+          "route": "/v1/organizations",
+          "method": "get"
+        },
+        {
+          "description": "POST /v1/organizations",
+          "link": "organizations/post_v1organizations.json",
+          "groups": "all",
+          "route": "/v1/organizations",
+          "method": "post"
+        },
+        {
+          "description": "PATCH /v1/organizations/:id",
+          "link": "organizations/patch_v1organizations:id.json",
+          "groups": "all",
+          "route": "/v1/organizations/:organization_id",
+          "method": "patch"
+        },
+        {
+          "description": "GET /v1/organizations/:id",
+          "link": "organizations/get_v1organizations:id.json",
+          "groups": "all",
+          "route": "/v1/organizations/:organization_id",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "examples": [
+        {
+          "description": "GET /v1/users/me",
+          "link": "users/get_v1usersme.json",
+          "groups": "all",
+          "route": "/v1/users/me",
+          "method": "get"
+        },
+        {
+          "description": "PATCH /v1/users/:id",
+          "link": "users/patch_v1users:id.json",
+          "groups": "all",
+          "route": "/v1/users/:user_id",
+          "method": "patch"
+        },
+        {
+          "description": "GET /v1/users/:id",
+          "link": "users/get_v1users:id.json",
+          "groups": "all",
+          "route": "/v1/users/:id",
+          "method": "get"
+        },
+        {
+          "description": "POST /v1/users",
+          "link": "users/post_v1users.json",
+          "groups": "all",
+          "route": "/v1/users",
+          "method": "post"
+        },
+        {
+          "description": "DELETE /v1/users/:user_id",
+          "link": "users/delete_v1users:user_id.json",
+          "groups": "all",
+          "route": "/v1/users/:user_id",
+          "method": "delete"
+        },
+        {
+          "description": "GET /v1/users",
+          "link": "users/get_v1users.json",
+          "groups": "all",
+          "route": "/v1/users",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Aauctions",
+      "examples": [
+        {
+          "description": "GET /v1/aauctions",
+          "link": "aauctions/get_v1aauctions.json",
+          "groups": "all",
+          "route": "/v1/aauctions",
+          "method": "get"
+        },
+        {
+          "description": "POST /v1/aauctions",
+          "link": "aauctions/post_v1aauctions.json",
+          "groups": "all",
+          "route": "/v1/aauctions",
+          "method": "post"
+        },
+        {
+          "description": "PATCH /v1/aauctions/:id",
+          "link": "aauctions/patch_v1aauctions:id.json",
+          "groups": "all",
+          "route": "/v1/aauctions/:aauction_id",
+          "method": "patch"
+        },
+        {
+          "description": "GET /v1/aauctions/:id",
+          "link": "aauctions/get_v1aauctions:id.json",
+          "groups": "all",
+          "route": "/v1/aauctions/:aauction_id",
+          "method": "get"
+        },
+        {
+          "description": "DELETE /v1/aauctions/:id",
+          "link": "aauctions/delete_v1aauctions:id.json",
+          "groups": "all",
+          "route": "/v1/aauctions/:aauction_id",
+          "method": "delete"
+        }
+      ]
+    }
+  ]
+}

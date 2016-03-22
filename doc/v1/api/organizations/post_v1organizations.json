@@ -1,0 +1,44 @@
+{
+  "resource": "Organizations",
+  "http_method": "POST",
+  "route": "/v1/organizations",
+  "description": "POST /v1/organizations",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "type",
+      "description": "    The type of the resource must be 'organizations'\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "name",
+      "description": "    The name of the organization\n"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/v1/organizations",
+      "request_body": "{\"data\":{\"type\":\"organizations\",\"attributes\":{\"name\":\"Uganda Revenue Authority\"}}}",
+      "request_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/vnd.api+json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\"data\":{\"id\":\"40\",\"type\":\"organizations\",\"links\":{\"self\":\"http://example.org/v1/organizations/40\"},\"attributes\":{\"name\":\"Uganda Revenue Authority\"}}}",
+      "response_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "response_content_type": "application/vnd.api+json",
+      "curl": null
+    }
+  ]
+}

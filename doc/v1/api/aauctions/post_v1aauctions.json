@@ -1,0 +1,77 @@
+{
+  "resource": "Aauctions",
+  "http_method": "POST",
+  "route": "/v1/aauctions",
+  "description": "POST /v1/aauctions",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "type",
+      "description": "    The type of the resource. is always \"aauctions\"\n"
+    },
+    {
+      "scope": "relationships",
+      "required": true,
+      "name": "organization",
+      "description": "    The organization to which the aauction belongs\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "starts-at",
+      "description": "    The time at which the aauction starts-at\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "ends-at",
+      "description": "    The time at which the aauction ends\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "time-zone-id",
+      "description": "    The time zone id should be used to localise the aauction time\n"
+    },
+    {
+      "scope": "attributes",
+      "name": "physical-address",
+      "description": "    The place where the aauction items will be located\n"
+    },
+    {
+      "scope": "attributes",
+      "name": "product-window-ends-at",
+      "description": "    The ending time of registering new products\n"
+    },
+    {
+      "scope": "attributes",
+      "name": "name",
+      "description": "    The name of the aauction\n"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/v1/aauctions",
+      "request_body": "{\"data\":{\"type\":\"aauctions\",\"relationships\":{\"organization\":{\"data\":{\"type\":\"organizations\",\"id\":\"45\"}}},\"attributes\":{\"starts-at\":\"2016-02-06T11:00:00.000Z\",\"ends-at\":\"2016-02-06T13:00:00.000Z\",\"time-zone-id\":\"America/New_York\",\"physical-address\":\"kampala uganda\",\"product-window-ends-at\":\"2016-02-05T11:00:00.000Z\",\"name\":\"selling matooke\"}}}",
+      "request_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/vnd.api+json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\"data\":{\"id\":\"33\",\"type\":\"aauctions\",\"links\":{\"self\":\"http://example.org/v1/aauctions/33\"},\"attributes\":{\"starts-at\":\"2016-02-06T11:00:00.000Z\",\"ends-at\":\"2016-02-06T13:00:00.000Z\",\"time-zone-id\":\"America/New_York\",\"physical-address\":\"kampala uganda\",\"product-window-ends-at\":\"2016-02-05T11:00:00.000Z\",\"name\":\"selling matooke\"},\"relationships\":{\"organization\":{\"links\":{\"self\":\"http://example.org/v1/aauctions/33/relationships/organization\",\"related\":\"http://example.org/v1/aauctions/33/organization\"},\"data\":{\"type\":\"organizations\",\"id\":\"45\"}}}}}",
+      "response_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "response_content_type": "application/vnd.api+json",
+      "curl": null
+    }
+  ]
+}

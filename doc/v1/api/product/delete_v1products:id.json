@@ -1,0 +1,33 @@
+{
+  "resource": "Product",
+  "http_method": "DELETE",
+  "route": "/v1/products/:product_id",
+  "description": "DELETE /v1/products/:id",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/v1/products/21",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/vnd.api+json",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+      },
+      "response_content_type": null,
+      "curl": null
+    }
+  ]
+}

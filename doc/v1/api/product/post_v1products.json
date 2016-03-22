@@ -1,0 +1,83 @@
+{
+  "resource": "Product",
+  "http_method": "POST",
+  "route": "/v1/products",
+  "description": "POST /v1/products",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "type",
+      "description": "    The type of the resource. is always \"products\"\n"
+    },
+    {
+      "scope": "attributes",
+      "name": "title",
+      "description": "    The title of the product.\n"
+    },
+    {
+      "scope": "attributes",
+      "name": "description",
+      "description": "    The description of the product.\n"
+    },
+    {
+      "scope": "attributes",
+      "name": "quantity",
+      "description": "    The quantity of the product.\n"
+    },
+    {
+      "scope": "attributes",
+      "name": "aauction-window-ends-at",
+      "description": "    The time when aauction of the product ends.\n"
+    },
+    {
+      "scope": "attributes",
+      "name": "aauction-window-starts-at",
+      "description": "    The time when aauction of the product starts.\n"
+    },
+    {
+      "scope": "attributes",
+      "name": "display-description",
+      "description": "    The display description of the product.\n"
+    },
+    {
+      "scope": "attributes",
+      "name": "minimum-bid",
+      "description": "    The minimum bid of the product.\n"
+    },
+    {
+      "scope": "relationships",
+      "name": "aauction",
+      "description": "    The aauction to which the product belongs.\n"
+    },
+    {
+      "scope": "relationships",
+      "name": "seller",
+      "description": "    The seller of the product.\n"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/v1/products",
+      "request_body": "{\"data\":{\"type\":\"products\",\"attributes\":{\"title\":\"i love jesus\",\"description\":\"for i have good plans for you\",\"quantity\":4,\"aauction-window-ends-at\":\"2016-02-06T13:00:00.000Z\",\"aauction-window-starts-at\":\"2016-02-06T11:00:00.000Z\",\"display-description\":\"images\",\"minimum-bid\":8000},\"relationships\":{\"aauction\":{\"data\":{\"type\":\"aauctions\",\"id\":\"29\"}},\"seller\":{\"data\":{\"type\":\"users\",\"id\":\"35\"}}}}}",
+      "request_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/vnd.api+json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\"data\":{\"id\":\"22\",\"type\":\"products\",\"links\":{\"self\":\"http://example.org/v1/products/22\"},\"attributes\":{\"title\":\"i love jesus\",\"description\":\"for i have good plans for you\",\"quantity\":4,\"aauction-window-ends-at\":\"2016-02-06T13:00:00.000Z\",\"aauction-window-starts-at\":\"2016-02-06T11:00:00.000Z\",\"display-description\":\"images\",\"minimum-bid\":8000},\"relationships\":{\"seller\":{\"links\":{\"self\":\"http://example.org/v1/products/22/relationships/seller\",\"related\":\"http://example.org/v1/products/22/seller\"},\"data\":{\"type\":\"users\",\"id\":\"35\"}},\"aauction\":{\"links\":{\"self\":\"http://example.org/v1/products/22/relationships/aauction\",\"related\":\"http://example.org/v1/products/22/aauction\"},\"data\":{\"type\":\"aauctions\",\"id\":\"29\"}}}}}",
+      "response_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "response_content_type": "application/vnd.api+json",
+      "curl": null
+    }
+  ]
+}
